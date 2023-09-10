@@ -16,6 +16,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "EvilInsultGenerate"
-include(":app")
-include(":evilwearos")
+include(":mobile")
+include(":wear")
 include(":core")
