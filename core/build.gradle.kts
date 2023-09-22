@@ -27,6 +27,16 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    packaging {
+        resources {
+            pickFirsts += listOf("META-INF/core_debug.kotlin_module",
+                "META-INF/core_release.kotlin_module",
+                "META-INF/library_debug.kotlin_module",
+                "META-INF/library_release.kotlin_module")
+        }
+    }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
